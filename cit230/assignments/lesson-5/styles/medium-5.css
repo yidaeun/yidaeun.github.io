@@ -25,14 +25,14 @@
     }
 
     .main-image {
-        width: 50%;
+        width: 100%;
         float: left;
         overflow: hidden;
     }
     .main-image img {
-        margin: 0 -60%;
-        width: 837px;
-        height: 260px;
+        margin: 0;
+        width: 100%;
+        height: auto;
     }
 
     .article-image {
