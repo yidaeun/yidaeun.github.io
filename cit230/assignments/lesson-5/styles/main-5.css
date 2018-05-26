@@ -8,7 +8,7 @@
 h1,
 h2 {
     background-color: #FFF;
-    color: #248159;
+    color: #32313B;
 }
 
 h1 {
@@ -25,7 +25,7 @@ h3 {
     font-weight: bolder;
     font-size: 1.3em;
     background-color: #FFF;
-    color: #67001F;
+    color: #AD272D;
 }
 
 p {
@@ -101,12 +101,12 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #240008;
+    background-color: #32313B;
 }
 
 nav ul li a {
     display: block;
-    color: #BC8234;
+    color: #FFF;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -118,7 +118,7 @@ nav ul li.active a {
 }
 
 nav ul li a:hover {
-    background-color: #450015;
+    background-color: #000000;
 }
 
 .main-image {
@@ -149,7 +149,7 @@ nav ul li a:hover {
     font-size: 1.8em;
     padding-left: 0.1em;
     padding-right: 0.1em;
-    color: #A82F54;
+    color: #FFA500;
     font-family: 'Courgette', cursive;
 }
 
@@ -217,9 +217,9 @@ footer {
 }
 
 footer aside {
-    background-color: #A82F54;
+    background-color: #000000;
     padding: 0.5em;
-    color: lightgray;
+    color: white;
 }
 
 footer aside span {
@@ -229,6 +229,6 @@ footer aside span {
 footer > p {
     margin-top: 0;
     padding: 0.5em;
-    background-color: #67001F;
-    color: lightgray;
+    background-color: #000000;
+    color: white;
 }
