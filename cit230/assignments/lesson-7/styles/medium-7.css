@@ -1,5 +1,4 @@
-@media only screen and (min-width: 37.5em) {
-
+@media only screen and (min-width: 600px) {
     .display-small {
         display: none;
     }
@@ -16,49 +15,62 @@
         font-size: 1.8em;
     }
 
+    nav div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
     nav button {
         display: none;
     }
-    
+
+    nav ul {
+        flex-direction: row;
+    }
+
     nav ul li {
-        float: left;
+        line-height: 1em;
     }
 
     nav ul li a {
         border: none;
         border-right: 1px solid rgba(255, 255, 255, 0.3);
         padding: 14px 14px;
-  }
-    
-    nav ul.hide {
-        display: block;
+        text-align: center;
     }
 
-    .weather-block {
-        display: inline-block;
-        width: 49%;
-        vertical-align: middle;
+    nav ul.hide {
+        display: flex;
     }
-    
+
+    .main-image {
+        width: 50%;
+    }
+
+    .weather-group {
+        width: 50%;
+    }
+
     .forecast {
         display: block;
     }
 
-    .main-image {
-        width: 100%;
-        float: left;
-        overflow: hidden;
-    }
-    .main-image img {
-        margin: 0;
-        width: 100%;
-        height: auto;
+    article {
+        flex-direction: row-reverse;
     }
 
     .article-image {
         width: 50%;
-        float: right;
-        margin-left: 0.5em;
+    }
+
+    article p {
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
     }
 
 }
