@@ -72,5 +72,10 @@
     .gallery-grid {
         grid-template-columns: 1fr 1fr;
     }
+    
+    .weather-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
 
 }
