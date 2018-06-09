@@ -44,46 +44,12 @@
         width: auto;
         padding-left: 3em;
     }
-
+    
     .gallery-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
     .gallery-grid img:hover {
         box-shadow: 5px 5px 10px gray;
-    }
-
-    /*---------WEATHER SUMMARY--------*/
-    #summary {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .current span {
-        display: flex;
-        justify-content: center;
-        margin-top: -10px;
-    }
-    .highlow,
-    .conditions {
-        display: flex;
-        flex-direction: column;
-    }
-
-    table {
-        width: 70%;
-        margin: auto;
-    }
-
-    .weather:hover {
-        box-shadow: 5px 5px 5px gray;
-        border: 1px solid;
-    }
-
-    .weather-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-bottom: 20px;
     }
 }

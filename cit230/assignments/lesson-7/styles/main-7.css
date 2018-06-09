@@ -284,25 +284,20 @@ footer > p {
 }
 
 
-/*--------WEATHER GRID--------*/
-
-.weather-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-gap: 20px;
-}
-.weather { 
-	display: grid;
-	height: 350px;
+.gallery-grid {
+  display: grid;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  grid-template-columns: 1fr;
+  grid-gap: 10px 10px;
 }
 
-.weather-info {
-	 font-size: 14px;
-    margin-top: 13px;
+.gallery-grid img {
+  width: 100%;
+  height: auto;
 }
-.weather-info p {
-    font-size: 1.3em;
-    margin-top: 2px;
-	 text-align: center;
+
+.gallery-grid figure {
+  margin: 0;
+  padding: 0;
 }
