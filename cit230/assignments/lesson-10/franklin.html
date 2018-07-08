@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Franklin City | The Weather for MTB 2018</title>
+    <meta name="author" content="Daeun Yi">
+    <meta name="description" content="Providing weather alerts and forecasts for Franklin City">
+
+    <!-- CSS Links -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div>
+                <img class="display-small" src="images/logo-small.png" alt="Daeun Yi Logo">
+                <img class="display-medium" src="images/logo-medium.png" alt="Daeun Yi Logo">
+                <img class="display-large" src="images/logo-large.png" alt="Daeun Yi Logo">
+            </div>
+            <div>
+                <h1 class="title">The Weather for MTB 2018</h1>
+                <h3 class="subtitle">It Never Gets Easier, You Just Get Better</h3>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div>
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="franklin.html">Franklin</a></li>
+                <li><a href="#">Greenville</a></li>
+                <li><a href="#">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="weather-container">
+            <div class="main-image">
+                <picture>
+                    <source srcset="images/franklin-small.jpg" media="(max-width: 600px)">
+                    <source srcset="images/franklin-medium.jpg" media="(max-width: 1024px)">
+                    <source srcset="images/franklin-large.jpg">
+                    <img src="images/franklin-large.jpg" id="main-image" alt="Franklin image">
+                </picture>
+            </div>
+            <div class="weather-group">
+                <h2 class="main-title"></h2>
+                <div class="weather-block">
+                    <div class="weather-desc"></div>
+                    <div class="weather-icon-container">
+                        <img src="images/sun.png" class="weather-icon" alt="Weather Image" id="weather-icon">
+                    </div>
+                </div>
+                <div class="weather-data">
+                    <div class="header">Current Temperature:</div>
+                    <div>
+                        <span id="current-temp"></span>&deg;F
+                    </div>
+                    <div class="header">Current Wind Speed:</div>
+                    <div>
+                        <span id="wind-speed"></span>mph
+                    </div>
+                    <div class="header">Today's Forecast:</div>
+                    <div>
+                        <span id="forecast-desc"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="forecast">
+            <h3>Ten-Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                        <th>Day 6</th>
+                        <th>Day 7</th>
+                        <th>Day 8</th>
+                        <th>Day 9</th>
+                        <th>Day 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&deg;F</td>
+                        <td>&deg;F</td>
+                        <td>&deg;F</td>
+                        <td>&deg;F</td>
+                        <td>&deg;F</td>
+                        <td>&deg;F</td>
+                        <td>&deg;F</td>
+                        <td>&deg;F</td>
+                        <td>&deg;F</td>
+                        <td>&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <article id="about-one">
+            <h3></h3>
+            <div class="article-image">
+                <img src="images/franklin.jpg" alt="Franklin Town Hall">
+            </div>
+            <div>
+                <p></p>
+                <ul></ul>
+            </div>
+        </article>
+
+        <article>
+            <h3>Battle Creek Regional Park, St. Paul</h3>
+            <div class="article-image">
+                <img src="images/battlecreek.jpg" alt="Battle Creek">
+            </div>
+            <p>
+                Just two hours away from Franklin, MN, you can find one of the best mountain biking trails in Minnesota.
+                <br>
+                <br>
+                Battle Creek Regional Park Mountain Bike Trails provides various difficulties adequate for different riders. Those who wants to enjoy the scenary and relax could go on the Paved Trails, those advanced riders wanting some fun could go on trails that are known to be one of the extreme trails in the nation. The park has over 20 different types of trails available so you could easily find one that you like the best.
+                <br>
+                <br>
+                Some of the trails includes:
+                <br>
+                <br>
+                Goat (0.6 mi), Jesus Saves (0.7 mi), North Rim / Dingo (0.6 mi)
+                <br>
+                <br>
+                Source: <a href="https://www.mtbproject.com/directory/8013784/battle-creek-regional-park">MTB PROJECT</a>
+            </p>
+        </article>
+
+    </main>
+
+    <footer>
+        <aside>
+            <span>The Weather for MTB 2018</span><br> 123 Main St. <br> Franklin, MU 83454 <br> (999) 999-9999 <br> contact@theurl.com <br>
+        </aside>
+        <p class="footer-bar">
+            &copy;2018 All Rights Reserved | The Weather for MTB 2018 |
+            <span id="currentdate"></span>
+        </p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/franklin.js"></script>
+
+</body>
+
+</html>
