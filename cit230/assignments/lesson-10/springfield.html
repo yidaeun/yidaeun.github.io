@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Springfield | The Weather for MTB 2018</title>
+    <meta name="author" content="Daeun Yi">
+    <meta name="description" content="Providing weather alerts and forecasts for Franklin City">
+
+    <!-- CSS Links -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="index.html">
+                <div>
+                    <img class="display-small" src="images/logo-small.png" alt="Daeun Yi Logo">
+                    <img class="display-medium" src="images/logo-medium.png" alt="Daeun Yi Logo">
+                    <img class="display-large" src="images/logo-large.png" alt="Daeun Yi Logo">
+                </div>
+            </a>
+            <div>
+                <h1 class="title">The Weather for MTB 2018</h1>
+                <h3 class="subtitle">It Never Gets Easier, You Just Get Better</h3>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div>
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="franklin.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li class="active"><a href="springfield.html">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="weather-container">
+            <div class="main-image">
+                <picture>
+                    <source srcset="images/franklin-small.jpg" media="(max-width: 600px)">
+                    <source srcset="images/franklin-medium.jpg" media="(max-width: 1024px)">
+                    <source srcset="images/franklin-large.jpg">
+                    <img src="images/franklin-large.jpg" id="main-image" alt="Franklin image">
+                </picture>
+            </div>
+            <div class="weather-group">
+                <h2 class="main-title"></h2>
+                <div class="weather-block">
+                    <div class="weather-desc"></div>
+                    <div class="weather-icon-container">
+                        <img src="images/sun.png" class="weather-icon" alt="Weather Image" id="weather-icon">
+                    </div>
+                </div>
+                <div class="weather-data">
+                    <div class="header">Current Temperature:</div>
+                    <div>
+                        <span id="current-temp"></span>&deg;F
+                    </div>
+                    <div class="header">Current Wind Speed:</div>
+                    <div>
+                        <span id="wind-speed"></span>mph
+                    </div>
+                    <div class="header">Today's Forecast:</div>
+                    <div>
+                        <span id="forecast-desc"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="forecast">
+            <h3>Ten-Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                        <th>Day 6</th>
+                        <th>Day 7</th>
+                        <th>Day 8</th>
+                        <th>Day 9</th>
+                        <th>Day 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&deg;F</td>
+                        <td>&deg;F</td>
+                        <td>&deg;F</td>
+                        <td>&deg;F</td>
+                        <td>&deg;F</td>
+                        <td>&deg;F</td>
+                        <td>&deg;F</td>
+                        <td>&deg;F</td>
+                        <td>&deg;F</td>
+                        <td>&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <article id="about-one">
+            <h3></h3>
+            <div class="article-image">
+                <img src="images/springfield.jpg" alt="Springfield City Hall">
+            </div>
+            <div>
+                <p></p>
+                <ul></ul>
+            </div>
+        </article>
+
+        <article>
+            <h3>Ridgeline &amp; Baldy, Eugene, OR</h3>
+            <div class="article-image">
+                <img src="images/ridgeline.jpg" alt="Ridgeline & Baldy">
+            </div>
+            <p>
+                Just fifteen minutes away from Springfield, you can find the Ridgeline Trail which provides a not overly technical, but steep hill for numerous riders.
+                <br>
+                <br> First mile has 300+ feet of elevation gain, the rest is more moderate. It's a good local trail for rides after work, also holds up well to weather/rain.
+                <br>
+                <br> Martin St trailhead to Fox Hollow TH is about 1 mile with 300+ feet of elevation gain, then up to Dillard Rd TH, head down the road a ways to Baldy, and then Up. The. Hill. Looking up Baldy, the left track is steep death, right track is moderately steep. I recommend going right, then coming down the fun way.
+                <br>
+                <br> Source: <a href="https://www.mtbproject.com/trail/5412234/ridgeline-baldy">MTB PROJECT</a>
+            </p>
+        </article>
+
+    </main>
+
+    <footer>
+        <aside>
+            <span>The Weather for MTB 2018</span><br> 123 Main St. <br> Franklin, MU 83454 <br> (999) 999-9999 <br> contact@theurl.com <br>
+        </aside>
+        <p class="footer-bar">
+            &copy;2018 All Rights Reserved | The Weather for MTB 2018 |
+            <span id="currentdate"></span>
+        </p>
+    </footer>
+
+    <script src="scripts/myutils.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/springfield.js"></script>
+    <script src="scripts/wayfinding.js"></script>
+
+</body>
+
+</html>
