@@ -52,6 +52,12 @@ footer {
     max-width: 1200px;
 }
 
+footer aside a img {
+    width: 100px;
+    margin: 5px;
+    border: 1px solid black;
+}
+
 .display-small {
     display: block;
 }
